@@ -30,7 +30,7 @@ public class AppConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/airlines");
+		dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/airlines");
 		dataSource.setUsername("root");
 		dataSource.setPassword("merodesh");
 		return dataSource;
@@ -54,7 +54,7 @@ public class AppConfig {
 	
 	Properties jpaProperties() {
 		Properties jpaProperties = new Properties();
-		jpaProperties.setProperty("hibernate.dailect", "org.hibernate.dialect.MySQL8Dialect");
+		jpaProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
 		jpaProperties.setProperty("hibernate.hbm2ddl.auto", "update");
 		jpaProperties.setProperty("hibernate.show_SQL", "true");
 		return jpaProperties;
