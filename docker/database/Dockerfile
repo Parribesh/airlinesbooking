@@ -1,6 +1,6 @@
 FROM mysql:latest
 
-ENV MYSQL_ROOT_PASSWORD=merodesh
+ENV MYSQL_ROOT_PASSWORD=yourpassword
 
 EXPOSE 3306
 
